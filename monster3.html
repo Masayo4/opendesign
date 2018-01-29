@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <title>VRテスト</title>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="../../polyfill/polyfill.js"></script>
+    <script src="../../drivers/i2c-ADS1015.js"></script>
+    <title>VRテスト</title>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <link rel="stylesheet" href="test.css">
+  </head>
+  <body onclick="mini()" onload="showpage()">
+    <div id="load">
+      <img src="load.gif">
+    </div>
+    <a-scene>
+      <!--位置（x,y,z）　回転　色 -->
+        <a-sphere position="0 1.25 -5" radius="2" rotation="180 90 170" src="monster/monster3.png" shadow >
+      <a-sky src="backimg.jpg"></a-sky>
+    </a-scene>
+    <script src="test.js"></script>
+  </body>
+</html>
